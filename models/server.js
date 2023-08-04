@@ -9,7 +9,7 @@ class Server {
     constructor() {
         //se crea la propiedad de express en la misma clase dentro del constructor
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usuariosPath = '/api/usuarios';
 
         //Middlewares(funciones que añaden otra funcionalidad a mi webserver. Una funcion que siempre va a ejecutarse al ejecutar el servidor)
